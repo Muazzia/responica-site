@@ -1,0 +1,15 @@
+export const ROUTES = {
+  HOME: "/",
+  WEB_DEVELOPMENT: "/web-development",
+  MOBILE_APPS: "/mobile-apps",
+  CLOUD_SOLUTIONS: "/cloud-solutions",
+  UI_UX_DESIGN: "/ui-ux-design",
+  E_COMMERCE: "/e-commerce",
+  CMS: "/cms",
+  BLOG: "/blog",
+  CONTACT: "/contact",
+  ABOUT: "/about",
+  SERVICES: "/services",
+  TERMS: "/terms",
+  PRIVACY: "/privacy",
+};

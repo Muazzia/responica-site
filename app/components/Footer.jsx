@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ROUTES } from "../constants/routes";
 import { CONTACT_INFO, FOOTER_LINKS } from "../constants/navigation";
+import Button from "./Button";
 
 const ContactInfoItem = ({ icon: Icon, text, href }) => (
   <li className="flex items-center gap-2">
@@ -29,13 +30,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <Link
-          href={ROUTES.CONTACT}
-          className="md:mt-0 bg-red-700 hover:bg-transparent hover:border hover:border-white text-white px-6 py-1.5 rounded-full font-semibold transition-colors text-sm whitespace-nowrap"
-          aria-label="Contact us"
-        >
-          Contact Us
-        </Link>
+        <Button label="Contact Us" ariaLabel="Contact us" route={ROUTES.CONTACT} />
       </div>
 
       <div className="max-w-7xl mx-auto py-12 flex flex-col md:flex-row gap-8 lg:gap-12 justify-between">
@@ -83,7 +78,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Quick Links */}
         <div className="w-full md:flex-[0.6] flex flex-col items-center md:items-start text-center md:text-left">
           <h3 className="text-base font-semibold mb-4">Quick Links</h3>
           <ul className="text-white space-y-3">
@@ -101,7 +95,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Copyright */}
       <div className="border-t border-gray-600 text-center text-white text-sm py-4 px-4">
         Copyright © 2024{" "}
         <a
